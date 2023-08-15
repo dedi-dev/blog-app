@@ -9,7 +9,7 @@
         <h1 class="h2">Articles</h1>
     </div>
     <div class="mt-3">
-        <button class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#createCategory">Create</button>
+        <a href="{{route('articles.create')}}" class="btn btn-success mb-2">Create</a>
         @if ($errors->any())
         @foreach ($errors->all() as $error)
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
